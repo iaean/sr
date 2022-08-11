@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/iaean/sr/compare/v1.0.1...v1.0.2) (2022-08-11)
+
+
+### Bug Fixes
+
+* remove version bump ([2faa611](https://github.com/iaean/sr/commit/2faa611a210635033c21bde5f559382b7b75fddc))
+
 ## [1.0.1](https://github.com/iaean/sr/compare/v1.0.0...v1.0.1) (2022-08-11)
 
 
