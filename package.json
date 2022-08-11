@@ -42,7 +42,7 @@
             "CHANGELOG.md",
             "package.json"
           ],
-          "message": "chore(release): Bumped new version ${nextRelease.version} [skip ci]"
+          "message": "Bumped new version ${nextRelease.version} [skip ci]"
         }
       ],
       "@semantic-release/github"
