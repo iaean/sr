@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/iaean/sr/compare/v1.0.5...v1.0.6) (2022-08-15)
+
+
+### Bug Fixes
+
+* **ci:** update config ([bce4a04](https://github.com/iaean/sr/commit/bce4a04920f4990f06a1398b6c39fdf4340f17cf))
+
 ## [1.0.5](https://github.com/iaean/sr/compare/v1.0.4...v1.0.5) (2022-08-15)
 
 
