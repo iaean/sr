@@ -5,10 +5,10 @@ module.exports = {
     "master",
     "next",
     "next-major",
-    { "name": "beta",
-      "prerelease": true },
-    { "name": "alpha",
-      "prerelease": true }
+    { name: "beta",
+      prerelease: true },
+    { name: "alpha",
+      prerelease: true }
   ],
   plugins: [
     "@semantic-release/commit-analyzer",
@@ -25,4 +25,4 @@ module.exports = {
     ],
     "@semantic-release/github"
   ]
-}
+};
