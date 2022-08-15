@@ -20,6 +20,8 @@ jobs:
     permissions:
       contents: write
       packages: write
+      metadata: read
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
