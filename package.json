@@ -25,7 +25,7 @@
         "prerelease": true
       }
     ],
-    "plugins": [],
+    "analyzeCommits": [ "@semantic-release/commit-analyzer" ],
     "dryRun": true
   },
   "devDependencies": {
