@@ -6,7 +6,7 @@ module.exports = {
   ...baseReleaseConfig,
   skipTag: true,
   plugins: [
-    "@semantic-release/commit-analyzer", "./release-scripts/application-info",
-    [ "@semantic-release/exec", { prepareCmd: "bump.sh ${nextRelease.version}" } ]
+    "@semantic-release/commit-analyzer",
+    [ "@semantic-release/exec", { prepareCmd: "./bump.sh ${nextRelease.version}" } ]
   ]
 };
