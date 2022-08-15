@@ -3,15 +3,15 @@
 // const baseReleaseConfig = require('./release.config.js');
 
 module.exports = {
-  // ...baseReleaseConfig,
-  plugins: [
-    "@semantic-release/commit-analyzer",
+  ...baseReleaseConfig,
+  prepare: [
     [ "@semantic-release/exec", { prepareCmd: "./bump.sh ${nextRelease.version}" } ]
   ],
   skipTag: true,
   verifyConditions: false,
+  verifyRelease: false,
+  generateNotes: false,
   publish: false,
   success: false,
-  fail: false,
-  npmPublish: false
+  fail: false
 };
