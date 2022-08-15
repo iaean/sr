@@ -20,8 +20,8 @@ jobs:
     permissions:
       contents: write
       packages: write
-      metadata: read
-      issues: read
+      issues: write
+      pull-requests: write
 
     steps:
       - name: Checkout repository
