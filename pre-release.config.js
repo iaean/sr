@@ -7,11 +7,5 @@ module.exports = {
   prepare: [
     [ "@semantic-release/exec", { prepareCmd: "./bump.sh ${nextRelease.version}" } ]
   ],
-  skipTag: true,
-  verifyConditions: [],
-  verifyRelease: [],
-  generateNotes: [],
-  publish: [],
-  success: [],
-  fail: []
+  skipTag: true
 };
