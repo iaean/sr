@@ -1,6 +1,6 @@
 {
   "name": "Foobar",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "scripts": {
     "semantic-release": "semantic-release"
   },

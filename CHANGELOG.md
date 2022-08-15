@@ -1,3 +1,24 @@
+## [1.0.7](https://github.com/iaean/sr/compare/v1.0.6...v1.0.7) (2022-08-15)
+
+
+### Bug Fixes
+
+* **ci:** update config ([16afcca](https://github.com/iaean/sr/commit/16afcca4496875c771ba3e12407efb291394be6b))
+
+## [1.0.7](https://github.com/iaean/sr/compare/v1.0.6...v1.0.7) (2022-08-15)
+
+
+### Bug Fixes
+
+* **ci:** update config ([16afcca](https://github.com/iaean/sr/commit/16afcca4496875c771ba3e12407efb291394be6b))
+
+## [1.0.7](https://github.com/iaean/sr/compare/v1.0.6...v1.0.7) (2022-08-15)
+
+
+### Bug Fixes
+
+* **ci:** update config ([16afcca](https://github.com/iaean/sr/commit/16afcca4496875c771ba3e12407efb291394be6b))
+
 ## [1.0.6](https://github.com/iaean/sr/compare/v1.0.5...v1.0.6) (2022-08-15)
 
 
