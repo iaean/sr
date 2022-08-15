@@ -45,11 +45,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "lts/*"
-          # cache: npm
+          cache: npm
       - name: Install dependencies
         run: yarn install
       - name: Pre Release
-        run: npx semantic-release -e pre-release.config.js
+        run: npx semantic-release -e ./pre-release.js --debug
       - name: Build
         uses: docker/build-push-action@v3
         with:
@@ -60,4 +60,4 @@ jobs:
       - name: Publish Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
+        run: npx semantic-release -e ./release.js --debug
