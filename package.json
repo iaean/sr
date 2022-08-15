@@ -1,6 +1,6 @@
 {
   "name": "Foobar",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "scripts": {
     "semantic-release": "semantic-release"
   },
@@ -24,11 +24,11 @@
         "prerelease": true
       }
     ],
-    "analyzeCommits": [ "@semantic-release/commit-analyzer" ],
+    "analyzeCommits": [
+      "@semantic-release/commit-analyzer"
+    ],
     "publish": [],
-    "ci": false,
-    "dryRun": false,
-    "npmPublish": false
+    "ci": false
   },
   "devDependencies": {
     "@semantic-release-plus/docker": "^3.1.2",
