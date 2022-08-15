@@ -3,7 +3,7 @@
 // const baseReleaseConfig = require('./release.config.js');
 
 module.exports = {
-  ...baseReleaseConfig,
+  // ...baseReleaseConfig,
   prepare: [
     [ "@semantic-release/exec", { prepareCmd: "./bump.sh ${nextRelease.version}" } ]
   ],
