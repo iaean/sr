@@ -21,6 +21,7 @@ jobs:
       contents: write
       packages: write
       metadata: read
+      issues: read
 
     steps:
       - name: Checkout repository
