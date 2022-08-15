@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/iaean/sr/compare/v1.0.3...v1.0.4) (2022-08-15)
+
+
+### Bug Fixes
+
+* **doc:** Add readme ([5b85987](https://github.com/iaean/sr/commit/5b85987e2d256cf04df3fb27b1664f6356d4b64f))
+
 ## [1.0.3](https://github.com/iaean/sr/compare/v1.0.2...v1.0.3) (2022-08-15)
 
 
