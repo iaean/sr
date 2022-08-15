@@ -1,3 +1,12 @@
+## [1.0.17](https://github.com/iaean/sr/compare/v1.0.16...v1.0.17) (2022-08-15)
+
+
+### Bug Fixes
+
+* **ci:** fix workflow permissions ([284cd07](https://github.com/iaean/sr/commit/284cd07e29667aed951e142051f90eed6035c04d))
+* **ci:** fix workflow permissions ([06d3725](https://github.com/iaean/sr/commit/06d372590b06e981d0b65d97b87f50d57e0a566e))
+* **ci:** fix workflow permissions ([fee281c](https://github.com/iaean/sr/commit/fee281c64d956fb9a7a3e60e50399644dc2b887b))
+
 ## [1.0.16](https://github.com/iaean/sr/compare/v1.0.15...v1.0.16) (2022-08-15)
 
 
