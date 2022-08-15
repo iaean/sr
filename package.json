@@ -10,7 +10,6 @@
   },
   "private": true,
   "release": {
-    "ci": false,
     "branches": [
       "['+([0-9])?(.{+([0-9]),x}).x",
       "master",
@@ -26,7 +25,10 @@
       }
     ],
     "analyzeCommits": [ "@semantic-release/commit-analyzer" ],
-    "dryRun": true
+    "publish": [],
+    "ci": false,
+    "dryRun": false,
+    "npmPublish": false
   },
   "devDependencies": {
     "@semantic-release-plus/docker": "^3.1.2",
