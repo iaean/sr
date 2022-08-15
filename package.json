@@ -9,11 +9,30 @@
     "url": "https://github.com/iaean/sr.git"
   },
   "private": true,
+  "release": {
+    "ci": false,
+    "branches": [
+      "['+([0-9])?(.{+([0-9]),x}).x",
+      "master",
+      "next",
+      "next-major",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ],
+    "plugins": [],
+    "dryRun": true
+  },
   "devDependencies": {
+    "@semantic-release-plus/docker": "^3.1.2",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "semantic-release-plus": "^20.0.0",
-    "@semantic-release-plus/docker": "^3.1.2"
+    "semantic-release": "^19.0.3"
   }
 }
