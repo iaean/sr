@@ -25,7 +25,7 @@
         "prerelease": true
       }
     ],
-    "ci": false
+    "ci": true
   },
   "devDependencies": {
     "@semantic-release-plus/docker": "^3.1.2",
