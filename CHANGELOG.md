@@ -1,3 +1,14 @@
+## [1.0.16](https://github.com/iaean/sr/compare/v1.0.15...v1.0.16) (2022-08-15)
+
+
+### Bug Fixes
+
+* **ci:** fix auth ([5c02789](https://github.com/iaean/sr/commit/5c02789b2e87ed26174495033ddcdb8e7e74d7ea))
+* **ci:** fix package.json ([e335a7e](https://github.com/iaean/sr/commit/e335a7ec66db675de3558f3cda8bebe2be5aaffd))
+* **ci:** fix package.json ([ca9cfd8](https://github.com/iaean/sr/commit/ca9cfd8f17e850b33dca953137f25394e78fe667))
+* **ci:** fix semantic-release ([724d2e5](https://github.com/iaean/sr/commit/724d2e55fc0d2e3652be4b407b330e4129a2d315))
+* **ci:** fix workflow permissions ([d3c421f](https://github.com/iaean/sr/commit/d3c421f1e132594b8b336b0f8365b6ea7a624677))
+
 ## [1.0.15](https://github.com/iaean/sr/compare/v1.0.14...v1.0.15) (2022-08-15)
 
 
