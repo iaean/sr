@@ -5,10 +5,7 @@
     "semantic-pre-release": "npx semantic-release -e ./pre-release.js --debug",
     "semantic-release": "npx semantic-release -e ./release.js --debug"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/iaean/sr.git"
-  },
+  "repository": "github:iaean/sr",
   "private": true,
   "release": {
     "branches": [
