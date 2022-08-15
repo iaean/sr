@@ -2,7 +2,8 @@
   "name": "Foobar",
   "version": "1.0.14",
   "scripts": {
-    "semantic-release": "semantic-release"
+    "semantic-pre-release": "npx semantic-release -e ./pre-release.js --debug",
+    "semantic-release": "npx semantic-release -e ./release.js --debug"
   },
   "repository": {
     "type": "git",
@@ -24,10 +25,6 @@
         "prerelease": true
       }
     ],
-    "analyzeCommits": [
-      "@semantic-release/commit-analyzer"
-    ],
-    "publish": [],
     "ci": false
   },
   "devDependencies": {
