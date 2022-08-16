@@ -1,3 +1,10 @@
+## [1.0.21](https://github.com/iaean/sr/compare/v1.0.20...v1.0.21) (2022-08-16)
+
+
+### Bug Fixes
+
+* **ci:** change workflow ([3b73e1f](https://github.com/iaean/sr/commit/3b73e1f5365e51b365b169a5145360c3073347e0))
+
 ## [1.0.20](https://github.com/iaean/sr/compare/v1.0.19...v1.0.20) (2022-08-16)
 
 
