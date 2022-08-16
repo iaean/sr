@@ -1,3 +1,1 @@
-[![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
-
-![example workflow](https://github.com/iaean/sr/actions/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/iaean/sr/actions/workflows/main.yml/badge.svg) [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
