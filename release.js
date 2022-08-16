@@ -15,10 +15,10 @@ module.exports = {
           "package.json" ],
         message: "Bumped new version ${nextRelease.version} [skip ci]" }
     ],
-    [ "@semantic-release-plus/docker", {
+    /* [ "@semantic-release-plus/docker", {
         skipLogin: true,
         name: "ghcr.io/iaean/sr:semantic-release" }
-    ],
+    ], */
     "@semantic-release/github"
   ]
 };

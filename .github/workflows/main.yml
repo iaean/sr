@@ -65,14 +65,19 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release -e ./pre-release.js
+      - name: Inject VERSION into workflow
+        run: |
+          echo VERSION=$(cat VERSION) >> $GITHUB_ENV
+        shell: bash
       - name: Build
         uses: docker/build-push-action@v3
         with:
           context: .
           platforms: linux/amd64,linux/arm64
-          load: true
-          push: false
-          tags: ${{ env.IMAGE }}
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository }}:latest
+            ghcr.io/${{ github.repository }}:${{ env.VERSION }}
       - name: Publish Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
