@@ -1,10 +1,19 @@
 name: Build, release and publish
 on:
   push:
-    branches: master
+    branches:
+      - master
+      - next
+      - beta
+      - alpha
+      - '*.x'
+  pull_request:
+    types:
+      - opened
+      - synchronize
 
 env:
-  IMAGE: ${{ github.repository }}:${{ github.run_id }}
+  IMAGE: ${{ github.repository }}:semantic-release
   #  <registry>/<namespace>/<repo>:<tag>
   #  <registry>/<namespace>/<repo>@<sha>
   #  github.repository # octo/cat
@@ -55,7 +64,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release -e ./pre-release.js --debug
+        run: npx semantic-release -e ./pre-release.js
       - name: Build
         uses: docker/build-push-action@v3
         with:
