@@ -1,3 +1,10 @@
+## [1.0.18](https://github.com/iaean/sr/compare/v1.0.17...v1.0.18) (2022-08-16)
+
+
+### Bug Fixes
+
+* **ci:** add docker ([6f05658](https://github.com/iaean/sr/commit/6f05658ea09f3b6762a7f0cdaa47c08116075fc9))
+
 ## [1.0.17](https://github.com/iaean/sr/compare/v1.0.16...v1.0.17) (2022-08-15)
 
 
