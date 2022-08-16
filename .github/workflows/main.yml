@@ -7,19 +7,14 @@ on:
       - beta
       - alpha
       - '*.x'
+    paths-ignore:
+      - '**.md'
   pull_request:
     types:
       - opened
       - synchronize
-
-env:
-  IMAGE: ${{ github.repository }}:semantic-release
-  #  <registry>/<namespace>/<repo>:<tag>
-  #  <registry>/<namespace>/<repo>@<sha>
-  #  github.repository # octo/cat
-  #  github.repository_owner # octo
-  #  github.run_id # 4711
-  #  github.sha # 47110815
+    paths-ignore:
+      - '**.md'
 
 jobs:
   release:
@@ -51,7 +46,6 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          # username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -82,4 +76,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release -e ./release.js --debug
+        run: npx semantic-release -e ./release.js
