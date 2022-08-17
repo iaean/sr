@@ -1,3 +1,10 @@
+## [1.0.23](https://github.com/iaean/sr/compare/v1.0.22...v1.0.23) (2022-08-17)
+
+
+### Bug Fixes
+
+* **ci:** change ghr ([d786e0b](https://github.com/iaean/sr/commit/d786e0b88edcedff4e7451d01ae7ba0ca40fcdbd))
+
 ## [1.0.22](https://github.com/iaean/sr/compare/v1.0.21...v1.0.22) (2022-08-16)
 
 
