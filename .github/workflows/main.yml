@@ -9,12 +9,12 @@ on:
       - '*.x'
     paths-ignore:
       - '**.md'
-  pull_request:
-    types:
-      - opened
-      - synchronize
-    paths-ignore:
-      - '**.md'
+  # pull_request:
+  #   types:
+  #     - opened
+  #     - synchronize
+  #   paths-ignore:
+  #     - '**.md'
 
 jobs:
   release:
@@ -41,21 +41,21 @@ jobs:
         with:
           node-version: "lts/*"
           cache: npm
-      - name: Install node modules
+      - name: Setup semantic-release
         run: yarn install
       - name: Pre Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release -e ./pre-release.js
-      - name: Check bump
-        id: bump
-        continue-on-error: true
-        run: git diff --exit-code VERSION
       - name: Inject VERSION into workflow
         run: |
           echo VERSION=$(cat VERSION) >> $GITHUB_ENV
         shell: bash
+      - name: Check for bump
+        id: bump
+        continue-on-error: true
+        run: git diff --exit-code VERSION
       # - name: Login to DockerHub
       #   if: ${{ success() && steps.bump.outcome == 'failure' }}
       #   uses: docker/login-action@v2
@@ -69,17 +69,27 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build
+      - name: Docker meta
+        if: ${{ success() && steps.bump.outcome == 'failure' }}
+        id: meta
+        uses: docker/metadata-action@v4
+        with:
+          images: |
+            # ${{ github.repository }}
+            ghcr.io/${{ github.repository }}
+          tags: |
+            # use custom value instead of git tag
+            type=semver,pattern={{version}},value=v${{ env.VERSION }}
+      - name: Docker build and push
         if: ${{ success() && steps.bump.outcome == 'failure' }}
         uses: docker/build-push-action@v3
         with:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: |
-            ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:${{ env.VERSION }}
-      - name: Publish Release
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+      - name: Publish GitHub Release on bump
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
