@@ -91,6 +91,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
       - name: Publish GitHub Release on bump
         env:
+          # Note: Branch protection can impact pushes by this user...
           # GIT_AUTHOR_NAME: ${{ github.actor }}
           # GIT_AUTHOR_EMAIL: ${{ github.actor }}@users.noreply.github.com
           # GIT_COMMITTER_NAME: ${{ github.actor }}
