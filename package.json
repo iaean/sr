@@ -1,6 +1,6 @@
 {
   "name": "Foobar",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "scripts": {
     "semantic-pre-release": "npx semantic-release -e ./pre-release.js --debug",
     "semantic-release": "npx semantic-release -e ./release.js --debug"

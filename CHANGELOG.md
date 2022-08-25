@@ -1,3 +1,10 @@
+## [1.0.25](https://github.com/iaean/sr/compare/v1.0.24...v1.0.25) (2022-08-25)
+
+
+### Bug Fixes
+
+* **ci:** change typo ([d0648ca](https://github.com/iaean/sr/commit/d0648cad3499f9b5bbaa00823e66f9b1b11a1060))
+
 ## [1.0.24](https://github.com/iaean/sr/compare/v1.0.23...v1.0.24) (2022-08-18)
 
 
